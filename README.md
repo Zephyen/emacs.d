@@ -65,7 +65,9 @@ encounter any errors at that stage, try restarting Emacs, and possibly
 running `M-x package-refresh-contents` before doing so.
 
 ## KeyBindings
+
 | window    | keybinding                             |
+| -         | -                                      |
 | C-x o     | switch-window                          |
 | C-x 1     | switch-window-then-maximize            |
 | C-x 2     | switch-window-then-split-below         |
