@@ -81,6 +81,8 @@ running `M-x package-refresh-contents` before doing so.
 | C-x 4 C-o | switch-window-then-kill-buffer         |
 | C-x 4 0   | switch-window-then-kill-buffer         |
 
+when swtich window is on.
+
 | key | command description   |
 | i   | move the border up    |
 | k   | move the border down  |
