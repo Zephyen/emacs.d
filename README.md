@@ -65,27 +65,28 @@ encounter any errors at that stage, try restarting Emacs, and possibly
 running `M-x package-refresh-contents` before doing so.
 
 ## KeyBindings
-| window | keybinding   |
-| C-x o  | switch-window|
-| C-x 1  | switch-window-then-maximize | 
-| C-x 2  | switch-window-then-split-below| 
-| C-x 3  | switch-window-then-split-right|
-| C-x 0  | switch-window-then-split-delete|
-| C-x 4 d| switch-window-then-dired|
-| C-x 4 f| switch-window-then-find-file|
-| C-x 4 m| switch-window-then=compose-mail|
-| C-x 4 r| switch-window-then-find-file-read-only|
-| C-x 4 C-f| switch-window-then-fine-file|
-| C-x 4 C-o| switch-window-then-kill-buffer|
-| C-x 4 0| switch-window-then-kill-buffer|
+| window    | keybinding                             |
+| C-x o     | switch-window                          |
+| C-x 1     | switch-window-then-maximize            |
+| C-x 2     | switch-window-then-split-below         |
+| C-x 3     | switch-window-then-split-right         |
+| C-x 0     | switch-window-then-split-delete        |
+| C-x 4 d   | switch-window-then-dired               |
+| C-x 4 f   | switch-window-then-find-file           |
+| C-x 4 m   | switch-window-then=compose-mail        |
+| C-x 4 r   | switch-window-then-find-file-read-only |
+| C-x 4 C-f | switch-window-then-fine-file           |
+| C-x 4 C-o | switch-window-then-kill-buffer         |
+| C-x 4 0   | switch-window-then-kill-buffer         |
 
-| key | command description|
-| i   | move the border up |
-| k   | move the border down|
-| j   | move the border left|
-| k   | move the border right|
-| b   | Balance windows | 
-| SPC | Resume auto-resize|
+| key | command description   |
+| i   | move the border up    |
+| k   | move the border down  |
+| j   | move the border left  |
+| k   | move the border right |
+| b   | Balance windows       |
+| SPC | Resume auto-resize    |
+
 ## Updates
 
 Update the config with `git pull`. You'll probably also want/need to update
