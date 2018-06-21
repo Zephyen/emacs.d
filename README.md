@@ -84,6 +84,7 @@ running `M-x package-refresh-contents` before doing so.
 when swtich window is on.
 
 | key | command description   |
+| -   | :-:                   |
 | i   | move the border up    |
 | k   | move the border down  |
 | j   | move the border left  |
