@@ -61,6 +61,7 @@
 (require 'init-ibuffer)
 (require 'init-flycheck)
 
+(require 'init-evil)
 (require 'init-recentf)
 (require 'init-smex)
 (require 'init-ivy)
