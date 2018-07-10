@@ -11,4 +11,4 @@
          (format " Proj[%s]" (projectile-project-name)))))))
 
 
-(provide 'init-projectile)
+( 'init-projectile)
