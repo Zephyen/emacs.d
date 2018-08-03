@@ -63,12 +63,15 @@
 
 (require 'init-evil)
 (require 'init-recentf)
-(require 'init-smex)
+;;(require 'init-smex)
 (require 'init-ivy)
 ;;(require 'init-helm)
 (require 'init-hippie-expand)
 (require 'init-company)
-(require 'init-windows)
+;;(require 'init-windows)
+(require 'init-ivy-swiper)
+(require 'init-windows-numbering)
+(require 'init-yasnippet)
 (require 'init-sessions)
 (require 'init-fonts)
 (require 'init-mmm)
@@ -99,12 +102,12 @@
 (require 'init-http)
 (require 'init-python)
 ;;(require 'init-haskell)
-(require 'init-elm)
+;;(require 'init-elm)
 ;;(require 'init-purescript)
 ;;(require 'init-ruby)
 ;;(require 'init-rails)
 (require 'init-sql)
-(require 'init-rust)
+;;(require 'init-rust)
 ;;(require 'init-toml)
 (require 'init-yaml)
 (require 'init-docker)
@@ -113,7 +116,8 @@
 (maybe-require-package 'nginx-mode)
 
 (require 'init-paredit)
-(require 'init-lisp)
+;;(require 'init-lisp)
+
 (require 'init-slime)
 ;;(require 'init-clojure)
 ;;(require 'init-clojure-cider)
@@ -126,12 +130,12 @@
 
 (require 'init-folding)
 (require 'init-dash)
+(require 'init-local)
 
 ;;(require 'init-twitter)
 ;; (require 'init-mu)
 (require 'init-ledger)
 ;; Extra packages which don't require any configuration
-
 (require-package 'gnuplot)
 (require-package 'lua-mode)
 (require-package 'htmlize)
