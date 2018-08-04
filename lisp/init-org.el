@@ -2,10 +2,11 @@
   (maybe-require-package 'grab-mac-link))
 
 (maybe-require-package 'org-cliplink)
-
+;; 设定议程目录路径
+(setq org-agenda-files '("~/Documents/org/"))
 (define-key global-map (kbd "C-c l") 'org-store-link)
 (define-key global-map (kbd "C-c a") 'org-agenda)
-
+(setq org-default-notes-file "~/Documents/org/note.org")
 ;; Various preferences
 (setq org-log-done t
       org-edit-timestamp-down-means-later t
@@ -106,7 +107,7 @@ typical word processor."
 
 (setq org-capture-templates
       `(("t" "todo" entry (file "")  ; "" => `org-default-notes-file'
-         "* NEXT %?\n%U\n" :clock-resume t)
+         "* Next %?\n%U\n" :clock-resume t)
         ("n" "note" entry (file "")
          "* %? :NOTE:\n%U\n%a\n" :clock-resume t)
         ))

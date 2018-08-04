@@ -6,6 +6,10 @@
 (evil-leader/set-key
   "ff" 'find-file
   "pf" 'projectile-find-file
+  "pp" 'projectile-switch-open-project
+  "pr" 'projectile-replace
+  "oa" 'org-agenda
+  "oc" 'org-capture
   "bb" 'switch-to-buffer
   "0"  'select-window-0
   "1"  'select-window-1
@@ -15,8 +19,13 @@
   "w-" 'split-window-below
   ":"  'counsel-M-x
   "wM" 'delete-other-windows
+  "wd" 'delete-window
+  "SPC" 'counsel-M-x
+  "ps" 'helm-ag-project-root
   )
 
+(define-key evil-normal-state-map (kbd ",.") 'other-window)
+(define-key evil-visual-state-map (kbd ",.") 'other-window)
 
 
 (require-package 'evil)
