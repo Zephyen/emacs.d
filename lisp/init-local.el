@@ -29,6 +29,5 @@
         (delq (current-buffer)
               (remove-if-not 'buffer-file-name (buffer-list)))))
 
-(setq make-backup-files nil)
 
 (provide 'init-local)
