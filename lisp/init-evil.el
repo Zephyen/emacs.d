@@ -22,8 +22,9 @@
   "bb" 'switch-to-buffer
   "bk" 'kill-other-buffers
   "bi" 'ibuffer
+  "s"  'save-buffer
   "0"  'select-window-0
-  "1"  'select-window-1
+  "1"  'selEct-window-1
   "2"  'select-window-2
   "3"  'select-window-3
   "w/" 'split-window-right
