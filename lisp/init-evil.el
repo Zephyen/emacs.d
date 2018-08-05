@@ -1,5 +1,9 @@
 ;;Note: You should enable global-evil-leader-mode before you enable evil-mode,
 ;;otherwise evil-leader won’t be enabled in initial buffers (*scratch*, *Messages*, …).
+(require-package 'evil-escape)
+(evil-escape-mode 1)
+(setq-default evil-escape-key-sequence "jk")
+
 (require-package 'evil-leader)
 (global-evil-leader-mode)
 (evil-leader/set-leader "SPC")
@@ -8,9 +12,15 @@
   "pf" 'projectile-find-file
   "pp" 'projectile-switch-open-project
   "pr" 'projectile-replace
+  "ps" 'helm-ag-project-root
+  "pe" 'projectile-recentf
+  "pd" 'projectile-dired
+  "j"  'avy-goto-char
   "oa" 'org-agenda
   "oc" 'org-capture
   "bb" 'switch-to-buffer
+  "bk" 'kill-other-buffers
+  "bi" 'ibuffer
   "0"  'select-window-0
   "1"  'select-window-1
   "2"  'select-window-2
@@ -20,13 +30,12 @@
   ":"  'counsel-M-x
   "wM" 'delete-other-windows
   "wd" 'delete-window
-  "SPC" 'counsel-M-x
-  "ps" 'helm-ag-project-root
+  "SPC" 'counsel-M-X
   )
+
 
 (define-key evil-normal-state-map (kbd ",.") 'other-window)
 (define-key evil-visual-state-map (kbd ",.") 'other-window)
-
 
 (require-package 'evil)
 (evil-mode 1)
