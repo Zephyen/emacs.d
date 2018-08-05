@@ -15,6 +15,7 @@
   "ps" 'helm-ag-project-root
   "pe" 'projectile-recentf
   "pd" 'projectile-dired
+  "r"  'counsel-recentf
   "j"  'avy-goto-char
   "oa" 'org-agenda
   "oc" 'org-capture
@@ -32,7 +33,6 @@
   "wd" 'delete-window
   "SPC" 'counsel-M-X
   )
-
 
 (define-key evil-normal-state-map (kbd ",.") 'other-window)
 (define-key evil-visual-state-map (kbd ",.") 'other-window)
