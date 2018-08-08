@@ -15,6 +15,12 @@
   "ps" 'helm-ag-project-root
   "pe" 'projectile-recentf
   "pd" 'projectile-dired
+  "fj" 'dired-other-window
+  "fe" 'open-init-file
+  "fr" 'ivy-recentf
+  "fc" 'copy-file
+  "fs" 'save-buffer
+  "fR" 'rename-this-file-and-buffer
   "r"  'counsel-recentf
   "j"  'avy-goto-char
   "oa" 'org-agenda
