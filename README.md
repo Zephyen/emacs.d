@@ -13,17 +13,12 @@ Emacs itself comes with support for many programming languages. This
 config adds improved defaults and extended support for the following, listed
 in the approximate order of how much I use them, from most to least:
 
-* Haskell / Elm
-* Ruby / Ruby on Rails
 * CSS / LESS / SASS / SCSS
 * Javascript / Typescript / Coffeescript
 * HTML / HAML / Markdown / Textile / ERB
-* Rust
 * Python
-* Clojure (with Cider and nRepl)
 * Common Lisp (with Slime)
 * PHP
-* Erlang
 
 In particular, there's a nice config for *autocompletion* with
 [company](https://company-mode.github.io/), and
@@ -66,31 +61,58 @@ running `M-x package-refresh-contents` before doing so.
 
 ## KeyBindings
 
-| window    | keybinding                             |
-| -         | -                                      |
-| C-x o     | switch-window                          |
-| C-x 1     | switch-window-then-maximize            |
-| C-x 2     | switch-window-then-split-below         |
-| C-x 3     | switch-window-then-split-right         |
-| C-x 0     | switch-window-then-split-delete        |
-| C-x 4 d   | switch-window-then-dired               |
-| C-x 4 f   | switch-window-then-find-file           |
-| C-x 4 m   | switch-window-then=compose-mail        |
-| C-x 4 r   | switch-window-then-find-file-read-only |
-| C-x 4 C-f | switch-window-then-fine-file           |
-| C-x 4 C-o | switch-window-then-kill-buffer         |
-| C-x 4 0   | switch-window-then-kill-buffer         |
+| window | keybinding                  |
+| -      | -                           |
+| C-=    | expand                      |
+| C-s    | swiper                      |
+| j k    | escape in evil insert state |
+| C-x o  | other-window                |
+| C-x 1  | delete other windows        |
+| C-x 2  | split-window-below          |
+| C-x 3  | split-window-right          |
+| C-f    | forward-char                |
+| C-b    | backward-char               |
+| C-.    | mark set like C-SPC         |
+| C-,    | evil-jump-backward          |
+| M-,    | evil-jump-forward           |
 
-when swtich window is on.
+## Evil mode KeyBinding
 
-| key | command description   |
-| -   | :-:                   |
-| i   | move the border up    |
-| k   | move the border down  |
-| j   | move the border left  |
-| k   | move the border right |
-| b   | Balance windows       |
-| SPC | Resume auto-resize    |
+### Evil-leader is SPC
+
+| key | function                                |
+| ff  | find-file                               |
+| pf  | projectile-find-file                    |
+| pp  | projectile-switch-projectile            |
+| pr  | projectile-replace                      |
+| ps  | helm-ag-projectile-root                 |
+| pd  | projectile-dired                        |
+| fj  | dired-other-window                      |
+| fe  | open-init-file                          |
+| fr  | ivy-recentf                             |
+| fc  | copy-file                               |
+| fs  | save-buffer                             |
+| fR  | rename-this-file-and-buffer             |
+| r   | counsel-recentf                         |
+| j   | avy-goto-char                           |
+| oa  | org-agenda                              |
+| oc  | org-capture                             |
+| bb  | switch-to-buffer                        |
+| bk  | kill-other-buffers                      |
+| bi  | ibuffer                                 |
+| s   | save-buffer                             |
+| 0   | select-window-0                         |
+| 1   | select-window-1                         |
+| 2   | select-window-2                         |
+| 3   | select-window-3                         |
+| w/  | split-window-right                      |
+| w-  | split-window-below                      |
+| :   | counsel-M-X                             |
+| wM  | delete-other-window                     |
+| wd  | delete-window                           |
+| SPC | counsel-M-X                             |
+| C-o | evil-jump-backward in evil normal state |
+| TAB | evil-jump-forward in evil normal state  |
 
 ## Updates
 

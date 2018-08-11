@@ -30,7 +30,7 @@
   "bi" 'ibuffer
   "s"  'save-buffer
   "0"  'select-window-0
-  "1"  'selEct-window-1
+  "1"  'select-window-1
   "2"  'select-window-2
   "3"  'select-window-3
   "w/" 'split-window-right
@@ -43,6 +43,9 @@
 
 (define-key evil-normal-state-map (kbd ",.") 'other-window)
 (define-key evil-visual-state-map (kbd ",.") 'other-window)
+
+(global-set-key (kbd "C-,") 'evil-jump-backward)
+(global-set-key (kbd "M-,") 'evil-jump-forward)
 
 (require-package 'evil)
 (evil-mode 1)
