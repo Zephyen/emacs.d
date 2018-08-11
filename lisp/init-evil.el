@@ -10,7 +10,7 @@
 (evil-leader/set-key
   "ff" 'find-file
   "pf" 'projectile-find-file
-  "pp" 'projectile-switch-open-project
+  "pp" 'projectile-switch-project
   "pr" 'projectile-replace
   "ps" 'helm-ag-project-root
   "pe" 'projectile-recentf
