@@ -15,8 +15,11 @@
 (global-hl-line-mode 1)
 (require 'web-mode)
 
-
+;; 去除备份文件， 去除自动保存
 (setq make-backup-files nil)
+(setq auto-save-default nil)
+
+
 (global-auto-revert-mode 1)
 
 (setq dired-recursive-deletes 'always)
