@@ -7,7 +7,7 @@
 
 (delete-selection-mode 1)
 
-(require 'hungry-delete)
+(require-package 'hungry-delete)
 (global-hungry-delete-mode)
 
 

@@ -1,5 +1,7 @@
 ;;Note: You should enable global-evil-leader-mode before you enable evil-mode,
 ;;otherwise evil-leader won’t be enabled in initial buffers (*scratch*, *Messages*, …).
+(require-package 'undo-tree)
+(require-package 'evil)
 (require-package 'evil-escape)
 (evil-escape-mode 1)
 (setq-default evil-escape-key-sequence "jk")
@@ -46,8 +48,6 @@
 
 (global-set-key (kbd "C-,") 'evil-jump-backward)
 (global-set-key (kbd "M-,") 'evil-jump-forward)
-
-(require-package 'evil)
 (evil-mode 1)
 
 ;;下面的代码可以将 insert state map 中的快捷键清空，使其可以回退（Fallback）到 Emacs State 中，
