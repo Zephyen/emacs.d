@@ -2,6 +2,7 @@
   (add-hook 'after-init-hook 'projectile-mode)
 
   (setq projectile-keymap-prefix (kbd "C-c p"))
+  (setq projectile-project-search-path '("~/.emacs.d/" "~/Documents/"))
 
   ;; Shorter modeline
   (after-load 'projectile
