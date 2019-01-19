@@ -75,6 +75,8 @@ running `M-x package-refresh-contents` before doing so.
 | C-.    | mark set like C-SPC         |
 | C-,    | evil-jump-backward          |
 | M-,    | evil-jump-forward           |
+| ,/     | comment                     |
+    
 
 ## Evil mode KeyBinding
 
@@ -113,6 +115,7 @@ running `M-x package-refresh-contents` before doing so.
 | SPC | counsel-M-X                             |
 | C-o | evil-jump-backward in evil normal state |
 | TAB | evil-jump-forward in evil normal state  |
+| ,/  | comment evil nerd commenter             |
 
 ## Updates
 
